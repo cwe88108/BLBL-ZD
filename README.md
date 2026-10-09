@@ -12,7 +12,7 @@
 
 **本项目与哔哩哔哩及其运营主体不存在隶属、合作、代理或官方授权关系。** 项目名称、界面预览及功能描述不表示获得平台或内容权利人的认可。需要稳定服务、完整权益或官方支持时，请使用平台官方产品。
 
-当前说明对应 **1.0.21（versionCode 22）**，更新日期：2026-10-09。
+当前说明对应 **标准版 1.0.21** 与 **兼容测试版 1.0.21-android5-7**（versionCode 均为 22），更新日期：2026-10-09。
 
 ## 界面预览
 
@@ -61,11 +61,18 @@
 
 ## 系统要求与安装
 
-- **Android 8.0 及以上（API 26+）**。当前正式版不支持 Android 4.4～7.x；旧系统兼容版尚未交付。
+| 版本 | 适用系统 | 下载 |
+| --- | --- | --- |
+| 标准正式版 1.0.21 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.21/BLBL-ZD-1.0.21-release.apk) · [SHA256](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.21/BLBL-ZD-1.0.21-release.apk.sha256) |
+| 兼容测试版 1.0.21-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.21/BLBL-ZD-1.0.21-android5-7-release.apk) · [SHA256](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.21/BLBL-ZD-1.0.21-android5-7-release.apk.sha256) |
+
+**两个版本均不支持 Android 4.4。** 兼容版已完成编译与正式签名核验，并在 Android 14 平板完成安装、冷启动与首页检查；这些结果不代表 Android 5.0～7.x 已通过实际运行验收。兼容版保留现有业务模块，旧设备上的视频/直播解码、遥控器及网络表现仍需验证。APK 包含 32 位 ARM、64 位 ARM、x86 和 x86_64 原生库。
+
+兼容版显示名称为“BLBL-ZD 兼容版”，包名为 `com.example.bilitv.legacy`，与标准版独立安装。两者登录、设置及本地记录分别保存，不能通过覆盖标准版迁移数据。
 - 主要面向横屏电视和电视盒子，也支持横屏平板；建议配合方向键、确认键、返回键使用。
 - 需要联网。高分辨率、高帧率、HDR及不同编码的播放效果取决于内容、账号权限、网络和设备解码能力。
 
-发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。尚未创建正式发布时，“最新版本”链接可能没有对应页面，请以 Releases 中实际列出的发布为准。
+发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。标准版和兼容测试版均在 1.0.21 Release 中提供，请按系统版本选择附件。
 
 1. 下载与目标设备系统相符的正式 APK，通过设备安装器安装。
 2. 如系统提示，按需允许本次安装来源；无需为本项目关闭系统安全保护或授予 Root 权限。
