@@ -5,6 +5,7 @@
 # BLBL-ZD
 
 面向 Android 电视、电视盒子的非官方哔哩哔哩客户端项目，支持遥控器操作和触摸操作。主要用于个人学习、Android TV 交互研究与个人设备测试。
+An unofficial Bilibili client project for Android TVs and TV boxes, supporting both remote control and touch operations. It is primarily intended for personal learning, Android TV interaction research, and personal device testing.
 
 **本仓库是安装包发布与问题反馈仓库，仅提供编译后的 APK、版本说明及界面预览，不上传应用源代码，也不作为源码开源仓库。**
 
