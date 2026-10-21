@@ -13,9 +13,9 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 **本项目与哔哩哔哩及其运营主体不存在隶属、合作、代理或官方授权关系。** 项目名称、界面预览及功能描述不表示获得平台或内容权利人的认可。需要稳定服务、完整权益或官方支持时，请使用平台官方产品。
 
-当前说明对应 **标准版 1.0.47** 与 **兼容测试版 1.0.47-android5-7**（versionCode 均为 48），更新日期：2026-10-19。
+当前说明对应 **标准版 1.0.59** 与 **兼容测试版 1.0.59-android5-7**（versionCode 均为 60），更新日期：2026-10-21。
 
-[查看 V1.0.47 完整说明与已知问题](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.47)；V1.0.46、V1.0.45、V1.0.21 历史版本继续保留。
+[查看 V1.0.59 完整说明与已知问题](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.59)；V1.0.47、V1.0.46、V1.0.45、V1.0.21 历史版本继续保留。
 
 ## 界面预览
 
