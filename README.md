@@ -9,34 +9,50 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 **本仓库是安装包发布与问题反馈仓库，仅提供编译后的 APK、版本说明及界面预览，不上传应用源代码，也不作为源码开源仓库。**
 
-[下载安装包](https://github.com/cwe88108/BLBL-ZD/releases) · [查看版本发布](https://github.com/cwe88108/BLBL-ZD/releases/latest) · [反馈问题](https://github.com/cwe88108/BLBL-ZD/issues)
+[下载安装包](https://github.com/cwe88108/BLBL-ZD/releases) · [查看V1.1.0预发布说明](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.0) · [反馈问题](https://github.com/cwe88108/BLBL-ZD/issues)
 
 **本项目与哔哩哔哩及其运营主体不存在隶属、合作、代理或官方授权关系。** 项目名称、界面预览及功能描述不表示获得平台或内容权利人的认可。需要稳定服务、完整权益或官方支持时，请使用平台官方产品。
 
-当前说明对应 **标准版 1.0.90** 与 **兼容测试版 1.0.90-android5-7**（versionCode 均为 91），更新日期：2026-10-31。
+当前说明对应 **标准版1.1.0** 与 **兼容测试版1.1.0-android5-7**（versionCode均为110），更新日期：2026-11-11。本版以 **Pre-release（预发布版）** 提供，完整稳定性及旧系统运行验收仍在继续。
 
-[查看 V1.0.90 完整说明与已知问题](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.90)；V1.0.73及其他历史版本继续保留。
+[查看V1.1.0更新与已知限制](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.0)；[V1.0.90](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.90)及其他历史版本继续保留。
+
+## V1.1.0 更新
+
+本版汇总V1.0.91～V1.0.92的电视界面与主题优化，并将两分支统一到1.1.0系列。
+
+| 主题 | 色彩方向 |
+|---|---|
+| 绯月曜影 | 原深色主题，暗夜山景与粉色强调 |
+| 青花瓷韵 | 瓷白、淡蓝灰与青花蓝 |
+| 暮光银紫 | 雾银、浅紫与鸢尾紫 |
+| 曜石香槟 | 珍珠白、暖灰与深琥珀 |
+
+切换入口：**设置 → 通用 → 主题**。三套浅色主题的文字、卡片、按钮和遥控焦点分别适配；个人中心与点播/直播控制条补齐主题颜色。原跟随系统及经典选项保留，视频内容和封面不作主题滤色。
+
+累计修复大字号下发布日期省略、部分弹窗和列表适配，以及“我的”返回刷新将追加列表截回第一页的问题。今日推荐横幅和顶部固定品牌栏按需求删除。性能目标与完整设备矩阵仍未完成，不作“提速一倍”等承诺。相对最终V1.0.92主题修复包，V1.1.0仅升级版本信息，运行时DEX和原生库保持一致。
 
 ## 界面预览
 
-以下为实机截图（以 1.0.21 界面为基础），包含电视端和横屏平板界面，不是概念图；当前版本在细节样式上可能已有调整。正式包与开发包的构建类型不同；截图仅用于说明界面，不表示所有设备、所有内容均已通过验收。推荐、直播、清晰度等内容随服务端、账号状态及设备能力变化。
+下列8张为电视盒子1920×1080原始截图，未用AI换色或修图。采集包为V1.0.92主题修复版，V1.1.0与其界面运行代码一致，仅版本信息变化。展示首页与通用设置；不公开含真实账号资料的个人中心和最近搜索截图。截图不代表全部设备或功能已完成验收。
 
-<table>
-  <tr>
-    <td width="50%"><strong>首页 · 推荐与分类</strong><br><img src="assets/screenshots/home.png" alt="首页推荐视频列表，卡片显示作者及发布日期" width="100%"></td>
-    <td width="50%"><strong>视频详情 · 推荐卡片</strong><br><img src="assets/screenshots/video-detail.png" alt="电视端视频详情页与右侧推荐视频卡片" width="100%"></td>
-  </tr>
-  <tr>
-    <td><strong>播放设置 · 清晰度</strong><br><img src="assets/screenshots/player-quality.png" alt="电视端播放清晰度设置，显示实际已选源与不可用档位提示" width="100%"></td>
-    <td><strong>直播 · 分类与房间列表</strong><br><img src="assets/screenshots/live.png" alt="直播分类和房间候选卡片" width="100%"></td>
-  </tr>
-  <tr>
-    <td><strong>设置 · 通用偏好</strong><br><img src="assets/screenshots/settings.png" alt="通用设置和播放、直播、操控、弹幕、字幕等设置分组" width="100%"></td>
-    <td><strong>搜索 · 系统输入法</strong><br><img src="assets/screenshots/search.png" alt="搜索输入框，点击后唤起系统输入法" width="100%"></td>
-  </tr>
-</table>
+### 绯月曜影
 
-截图中的视频画面、封面、标题、头像及商标等属于相应权利人；展示不构成对这些内容的再利用授权。如权利人认为展示不适当，可通过本仓库 Issue 提出删除或替换请求。
+<table><tr><td width="50%"><strong>首页</strong><br><img src="assets/screenshots/v1.1.0/dark-home.png" alt="绯月曜影主题电视首页真机截图" width="100%"></td><td width="50%"><strong>通用设置</strong><br><img src="assets/screenshots/v1.1.0/dark-settings.png" alt="绯月曜影主题电视通用设置真机截图" width="100%"></td></tr></table>
+
+### 青花瓷韵
+
+<table><tr><td width="50%"><strong>首页</strong><br><img src="assets/screenshots/v1.1.0/porcelain-home.png" alt="青花瓷韵主题电视首页真机截图" width="100%"></td><td width="50%"><strong>通用设置</strong><br><img src="assets/screenshots/v1.1.0/porcelain-settings.png" alt="青花瓷韵主题电视通用设置真机截图" width="100%"></td></tr></table>
+
+### 暮光银紫
+
+<table><tr><td width="50%"><strong>首页</strong><br><img src="assets/screenshots/v1.1.0/iris-home.png" alt="暮光银紫主题电视首页真机截图" width="100%"></td><td width="50%"><strong>通用设置</strong><br><img src="assets/screenshots/v1.1.0/iris-settings.png" alt="暮光银紫主题电视通用设置真机截图" width="100%"></td></tr></table>
+
+### 曜石香槟
+
+<table><tr><td width="50%"><strong>首页</strong><br><img src="assets/screenshots/v1.1.0/champagne-home.png" alt="曜石香槟主题电视首页真机截图" width="100%"></td><td width="50%"><strong>通用设置</strong><br><img src="assets/screenshots/v1.1.0/champagne-settings.png" alt="曜石香槟主题电视通用设置真机截图" width="100%"></td></tr></table>
+
+截图中的视频封面、标题、头像及商标等属于相应权利人；展示不构成对这些内容的再利用授权。如权利人认为展示不适当，可通过本仓库Issue提出删除或替换请求。
 
 ## 功能概览
 
@@ -55,7 +71,7 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 以上是当前实现范围，不是功能永久可用或与官方客户端完全一致的承诺。平台接口变化、账号状态、地区限制和系统能力均可能影响结果。
 
-### V1.0.90 相比 V1.0.73 的累计更新
+### 历史更新：V1.0.90 相比 V1.0.73
 
 本次包含 **V1.0.74～V1.0.90** 的新增功能与优化，标准版和兼容测试版同步到 V1.0.90。
 
@@ -93,13 +109,13 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 | 版本 | 适用系统 | 下载 |
 | --- | --- | --- |
-| 标准正式版 1.0.90 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.90/BLBL-ZD-1.0.90-release.apk) |
-| 兼容测试版 1.0.90-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.0.90/BLBL-ZD-1.0.90-android5-7-release.apk) |
+| 标准预发布版 1.1.0 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.0/BLBL-ZD-1.1.0-release.apk) |
+| 兼容测试版 1.1.0-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.0/BLBL-ZD-1.1.0-android5-7-release.apk) |
 
 | 安装包 | SHA-256 |
 |---|---|
-| 标准版 1.0.90 | `838b2d21a3f107c0f529039b4be79b29dde73843033137b94d588e0878b624fa` |
-| 兼容版 1.0.90-android5-7 | `0a3a57c0ee83dd5f3e1ab5769b8a2e258240fb757867f4b27a9526a481dfdf38` |
+| 标准版 1.1.0 | `c71ab9d691cca7b1bf963b10c9ecde44473c4c960d1c5206cb14862e40c361d7` |
+| 兼容版 1.1.0-android5-7 | `f357e3f1b9cf7d4c73e714f7af9e4ca61713745a279f00fa44112b7945fc6af4` |
 
 **两个版本均不支持 Android 4.4。** 本次兼容版已完成编译、测试与正式签名核验；本次未做真机安装验收，历史Android14平板结果不代表本版本或Android5.0～7.x已通过实际运行验收。兼容版保留现有业务模块，旧设备上的视频/直播解码、遥控器及网络表现仍需验证。APK 包含 32 位 ARM、64 位 ARM、x86 和 x86_64 原生库。
 
@@ -107,7 +123,7 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 - 主要面向横屏电视和电视盒子，也支持横屏平板；建议配合方向键、确认键、返回键使用。
 - 需要联网。高分辨率、高帧率、HDR及不同编码的播放效果取决于内容、账号权限、网络和设备解码能力。
 
-发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。标准版和兼容测试版均在 1.0.90 Release 中提供，请按系统版本选择附件。本次附两个 APK 与两个 `.sha256` 校验文件，校验值同时列在 Release 说明及本 README。
+发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。标准版和兼容测试版均在 V1.1.0 Pre-release 中提供，请按系统版本选择附件。本次仅附两个APK，校验值列在Release说明及本README。
 
 1. 下载与目标设备系统相符的正式 APK，通过设备安装器安装。
 2. 如系统提示，按需允许本次安装来源；无需为本项目关闭系统安全保护或授予 Root 权限。
@@ -200,4 +216,3 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 本仓库公开安装包，不公开应用源代码，也不以开源许可证授权本应用。能够下载 APK，不等于获得修改、重新打包、再分发或商业使用的授权；需要超出个人设备测试范围使用时，应先核实相应权利与许可。
 
 本说明仅表达本项目的发布范围，不改变任何第三方代码、依赖、素材、内容或商标的原有权利。安装包分发仍应履行所使用第三方组件的许可要求，包括适用的署名、许可文本以及源码提供义务；不能仅以“本项目不开源”排除这些义务。相关权利以各自适用许可为准。
-
