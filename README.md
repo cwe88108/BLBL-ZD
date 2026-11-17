@@ -9,15 +9,25 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 **本仓库是安装包发布与问题反馈仓库，仅提供编译后的 APK、版本说明及界面预览，不上传应用源代码，也不作为源码开源仓库。**
 
-[下载安装包](https://github.com/cwe88108/BLBL-ZD/releases) · [查看V1.1.5正式版说明](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.5) · [反馈问题](https://github.com/cwe88108/BLBL-ZD/issues)
+[下载安装包](https://github.com/cwe88108/BLBL-ZD/releases) · [查看V1.1.7正式版说明](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.7) · [反馈问题](https://github.com/cwe88108/BLBL-ZD/issues)
 
 **本项目与哔哩哔哩及其运营主体不存在隶属、合作、代理或官方授权关系。** 项目名称、界面预览及功能描述不表示获得平台或内容权利人的认可。需要稳定服务、完整权益或官方支持时，请使用平台官方产品。
 
-当前说明对应 **正式标准版1.1.5** 与 **兼容测试版1.1.5-android5-7**（versionCode均为115），更新日期：2026-11-12。**V1.1.5为正式Release，不标记为Pre-release。** 兼容包仍缺少真实Android5～7设备验收；正式发布状态不代表所有设备和异常场景均已通过验证。
+当前说明对应 **正式标准版1.1.7** 与 **兼容版1.1.7-android5-7**（versionCode均为117），更新日期：2026-11-17。**V1.1.7为正式Release，不标记为Pre-release。** 兼容包仍缺少真实Android5～7设备验收；正式发布状态不代表所有设备和异常场景均已通过验证。
 
-[查看V1.1.5更新与已知限制](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.5)；[V1.1.0预发布版](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.0)、[V1.0.90](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.90)及其他历史版本继续保留。
+[查看V1.1.7更新说明](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.7)；[V1.1.0预发布版](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.0)、[V1.0.90](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.90)及其他历史版本继续保留。
 
-## V1.1.5 正式版更新
+## V1.1.7 正式版更新
+
+本次更新重点优化资源加载、播放体验与遥控器操作响应。
+
+- **资源加载**：首页、分类改为按需加载，减少无效请求与后台资源争抢。
+- **首页展示**：继续观看卡片优先显示，详情信息随后补齐；完善推荐、热门独立加载状态。
+- **播放体验**：优化播放预准备复用、直播加载及弹幕连接处理。
+- **运行效率**：页面切换和进入后台时及时取消无效任务，改善资源回收。
+- **安装包优化**：标准版启用代码压缩与优化，缩减安装体积。
+
+## 历史更新：V1.1.5
 
 相对公开的V1.1.0预发布版，汇总V1.1.1～V1.1.5的画质、详情预加载与HDR兼容修复。保留现有四套主题和遥控器界面。
 
@@ -50,7 +60,7 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 ## 界面预览
 
-下列8张为电视盒子1920×1080原始截图，未用AI换色或修图。采集包为V1.0.92主题修复版，作为V1.1.0四主题的历史预览保留，**不是V1.1.5新增功能截图**。展示首页与通用设置；不公开含真实账号资料的个人中心和最近搜索截图。截图不代表全部设备或功能已完成验收。
+下列8张为电视盒子1920×1080原始截图，未用AI换色或修图。采集包为V1.0.92主题修复版，作为V1.1.0四主题的历史预览保留，**不是V1.1.7新增功能截图**。展示首页与通用设置；不公开含真实账号资料的个人中心和最近搜索截图。截图不代表全部设备或功能已完成验收。
 
 ### 绯月曜影
 
@@ -125,13 +135,13 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 | 版本 | 适用系统 | 下载 |
 | --- | --- | --- |
-| 正式标准版 1.1.5 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.5/BLBL-ZD-1.1.5-release.apk) |
-| 兼容测试版 1.1.5-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.5/BLBL-ZD-1.1.5-android5-7-release.apk) |
+| 正式标准版 1.1.7 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.7/BLBL-ZD-v1.1.7-standard.apk) |
+| 兼容版 1.1.7-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.7/BLBL-ZD-v1.1.7-android5-7.apk) |
 
 | 安装包 | SHA-256 |
 |---|---|
-| 标准版 1.1.5 | `58ccbb26c60884563a867c2874d5ccd8e0fc13ef3e762ac9bc22077a9f347d77` |
-| 兼容版 1.1.5-android5-7 | `60fea443d0d218a95c37a901529ef687d7ad1f589f02b74dd3e97eaf6b3b4e33` |
+| 标准版 1.1.7 | `5f2f630058350f45e8e45340c771e39a4fda8264051dd3c3a4a1a4198af76c4c` |
+| 兼容版 1.1.7-android5-7 | `0c64a0912860b8f8fcc457bce6328acde43da83a50730a8395382198ca15e408` |
 
 **两个版本均不支持 Android 4.4。** 本次兼容版已完成编译、测试与正式签名核验；本次未做真机安装验收，历史Android14平板结果不代表本版本或Android5.0～7.x已通过实际运行验收。兼容版保留现有业务模块，旧设备上的视频/直播解码、遥控器及网络表现仍需验证。APK 包含 32 位 ARM、64 位 ARM、x86 和 x86_64 原生库。
 
@@ -139,7 +149,7 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 - 主要面向横屏电视和电视盒子，也支持横屏平板；建议配合方向键、确认键、返回键使用。
 - 需要联网。高分辨率、高帧率、HDR及不同编码的播放效果取决于内容、账号权限、网络和设备解码能力。
 
-发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。标准版和兼容测试版均在 V1.1.5 正式Release 中提供，请按系统版本选择附件。本次仅附两个APK，校验值列在Release说明及本README。
+发布的安装包请从 **[本仓库 Releases](https://github.com/cwe88108/BLBL-ZD/releases)** 获取，并核对该发布附带的 SHA256 校验值；仓库没有发布对应文件时，不代表其他渠道的同名文件由本项目提供。标准版和兼容版均在 V1.1.7 正式Release 中提供，请按系统版本选择附件。本次仅附两个APK，校验值列在本README。
 
 1. 下载与目标设备系统相符的正式 APK，通过设备安装器安装。
 2. 如系统提示，按需允许本次安装来源；无需为本项目关闭系统安全保护或授予 Root 权限。
@@ -204,7 +214,7 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 本仓库公开的内容包括：
 
-- Releases 中编译并签名的 APK；V1.1.5仅附两份APK，SHA-256列于Release说明及本README。V1.0.90等历史附件继续保留。
+- Releases 中编译并签名的 APK；V1.1.7仅附两份APK，SHA-256列于本README。V1.0.90等历史附件继续保留。
 - README、版本变更说明、使用说明和界面截图。
 - Issues 中经过脱敏的问题反馈。
 
