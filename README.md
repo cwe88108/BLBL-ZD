@@ -13,9 +13,13 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 **本项目与哔哩哔哩及其运营主体不存在隶属、合作、代理或官方授权关系。** 项目名称、界面预览及功能描述不表示获得平台或内容权利人的认可。需要稳定服务、完整权益或官方支持时，请使用平台官方产品。
 
-当前说明对应 **正式标准版1.1.7** 与 **兼容版1.1.7-android5-7**（versionCode均为117），更新日期：2026-11-17。**V1.1.7为正式Release，不标记为Pre-release。** 兼容包仍缺少真实Android5～7设备验收；正式发布状态不代表所有设备和异常场景均已通过验证。
+当前说明对应 **正式标准版1.1.8**（versionCode 118）与 **兼容版1.1.7-android5-7**（versionCode 117），更新日期：2026-11-18。**V1.1.7为正式Release，不标记为Pre-release。** 兼容包仍缺少真实Android5～7设备验收；正式发布状态不代表所有设备和异常场景均已通过验证。
 
 [查看V1.1.7更新说明](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.7)；[V1.1.0预发布版](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.1.0)、[V1.0.90](https://github.com/cwe88108/BLBL-ZD/releases/tag/v1.0.90)及其他历史版本继续保留。
+
+## V1.1.8 标准版修复
+
+修复标准版启用 R8 压缩后，普通视频和番剧播放时开启弹幕却不显示的问题。新版标准包放在 V1.1.7 Release 中，请手动下载安装。兼容版沿用 V1.1.7。
 
 ## V1.1.7 正式版更新
 
@@ -135,12 +139,12 @@ An unofficial Bilibili client project for Android TVs and TV boxes, supporting b
 
 | 版本 | 适用系统 | 下载 |
 | --- | --- | --- |
-| 正式标准版 1.1.7 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.7/BLBL-ZD-v1.1.7-standard.apk) |
+| 正式标准版 1.1.8 | Android 8.0 及以上（API 26+），新设备优先使用 | [标准版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.7/BLBL-ZD-v1.1.8-standard.apk) |
 | 兼容版 1.1.7-android5-7 | 面向 Android 5.0～7.x（最低 API 21），旧系统运行验收尚未完成 | [兼容版 APK](https://github.com/cwe88108/BLBL-ZD/releases/download/v1.1.7/BLBL-ZD-v1.1.7-android5-7.apk) |
 
 | 安装包 | SHA-256 |
 |---|---|
-| 标准版 1.1.7 | `5f2f630058350f45e8e45340c771e39a4fda8264051dd3c3a4a1a4198af76c4c` |
+| 标准版 1.1.8 | `1de89ac65a5547b3099e0445afeaac871b94fdc2da8442d7997fc688eeb1c4cd` |
 | 兼容版 1.1.7-android5-7 | `0c64a0912860b8f8fcc457bce6328acde43da83a50730a8395382198ca15e408` |
 
 **两个版本均不支持 Android 4.4。** 本次兼容版已完成编译、测试与正式签名核验；本次未做真机安装验收，历史Android14平板结果不代表本版本或Android5.0～7.x已通过实际运行验收。兼容版保留现有业务模块，旧设备上的视频/直播解码、遥控器及网络表现仍需验证。APK 包含 32 位 ARM、64 位 ARM、x86 和 x86_64 原生库。
